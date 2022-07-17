@@ -1,0 +1,123 @@
+/** @format */
+
+:root {
+  --bg-light: #f3eed9;
+  --bg-mid: #824936;
+  --bg-high: #222c2a;
+
+  --bg-white: #ffffff;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+h1,
+h2,
+p,
+body {
+  margin: 0;
+}
+
+h1 {
+  font-size: 7rem;
+}
+h2 {
+  font-size: 5.5rem;
+}
+h3 {
+  font-size: 3.5rem;
+}
+p {
+  font-size: 2rem;
+}
+
+.headcontainer {
+  background-color: var(--bg-light);
+  color: var(--bg-mid);
+  padding-inline: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-block: 10rem;
+}
+
+.headcontainer div {
+  width: min(95%, 75rem);
+}
+
+.middlecontainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-block: 10rem;
+  /* padding-inline: 15rem; */
+  gap: 4rem;
+}
+
+.split {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: left;
+  gap: 8rem;
+  width: min(90%, 110rem);
+}
+
+@media (min-width: 40em) {
+  .split {
+    flex-direction: row;
+  }
+  .split > * {
+    flex-basis: 100%;
+  }
+
+  .split > * + * {
+    margin-left: 2em;
+  }
+}
+
+.contanier {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--bg-high);
+  padding-block: 5rem;
+  color: var(--bg-light);
+  width: 100%;
+}
+.lastbut {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-inline: auto;
+  width: min(90%, 99.8rem);
+}
+.lastbut .lastbuttext {
+  padding-inline: auto;
+}
+.lastbut .lastbutimg {
+  padding-inline: auto;
+}
+.lastbutimg img {
+  width: 100%;
+}
+
+@media (min-width: 40em) {
+  .lastbut {
+    flex-direction: row;
+  }
+  .lastbut > * {
+    flex-basis: 100%;
+  }
+
+  .lastbut > * + * {
+    margin-left: 2em;
+  }
+}
